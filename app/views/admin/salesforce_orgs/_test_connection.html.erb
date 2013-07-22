@@ -1,0 +1,8 @@
+<% if salesforce_org != nil %>
+<div style="display:none">
+  <input id="salesforce_org_username" value="<%= salesforce_org.username %>" />
+  <input id="salesforce_org_password" value="<%= salesforce_org.password %>" />
+  <input id="salesforce_org_token" value="<%= salesforce_org.token %>" />
+</div>
+<% end %>
+<a class="testConnection">Test Connection</a><span id='connResult'></span>

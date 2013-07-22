@@ -1,0 +1,18 @@
+<%= semantic_form_for [:admin, @salesforce_org] do |f| %>
+    <%= f.inputs "Details" do %>
+        <%= f.input :name %>
+        <%= f.input :username %>
+        <%= f.input :password, :as => :password, :input_html => { :value => f.object.password} %>
+        <%= f.input :token, :as => :password, :input_html => { :value => f.object.token} %>
+        <li>
+          <%= render "test_connection", :salesforce_org => nil %>
+        </li>
+        <%= f.input :disabled %>
+        <%= f.input :packaged %>
+        <%= f.input :sandbox %>
+    <% end %>
+    <%= f.actions do %>
+        <%= f.action :submit %>
+        <%= f.action :cancel, :label => "Cancel", :wrapper_html => { :class => "cancel"} %>
+    <% end %>
+<% end %>
