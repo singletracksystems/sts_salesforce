@@ -1,0 +1,59 @@
+.testConnection.disabled {
+    opacity: 0.5 !important;
+    cursor: default !important;
+}
+
+.testConnection:not(.disabled):hover {
+    background: white !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f1f1f1)) !important;
+    background: -moz-linear-gradient(-90deg, white, #f1f1f1) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#f1f1f1') !important;
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#f1f1f1') !important;
+    }
+
+.testConnection:not(.disabled):active {
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #eeeeee !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #eeeeee !important;
+    border-color: #b9b9b9 !important;
+    border-top-color: #c2c2c2 !important;
+    border-right-color: #b9b9b9 !important;
+    border-bottom-color: #b7b7b7 !important;
+    border-left-color: #b9b9b9 !important;
+    background: #f3f3f3 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#d8d8d8)) !important;
+    background: -moz-linear-gradient(-90deg, #f3f3f3, #d8d8d8) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3', endColorstr='#d8d8d8') !important;
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3', endColorstr='#d8d8d8') !important;
+    }
+
+.testConnection {
+    text-decoration: none !important;
+    cursor: pointer !important;
+    -webkit-border-radius: 200px !important;
+    -moz-border-radius: 200px !important;
+    border-radius: 200px !important;
+    display: inline-block !important;
+    font-weight: bold !important;
+    font-size: 1.0em !important;
+    font-family: Helvetica, Arial, sans-serif !important;
+    line-height: 12px !important;
+    margin-right: 3px !important;
+    padding: 7px 16px 6px !important;
+    text-decoration: none !important;
+    -webkit-font-smoothing: antialiased !important;
+    background: white !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#e7e7e7)) !important;
+    background: -moz-linear-gradient(-90deg, white, #e7e7e7) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#e7e7e7') !important;
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#e7e7e7') !important;
+-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset !important;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset !important;
+border: solid 1px #c7c7c7 !important;
+border-color: #c7c7c7 !important;
+border-top-color: lightgrey !important;
+border-right-color: #c7c7c7 !important;
+border-bottom-color: #c2c2c2 !important;
+border-left-color: #c7c7c7 !important;
+text-shadow: white 0 1px 0 !important;
+color: #5e6469 !important;
+    }
