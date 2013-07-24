@@ -21,7 +21,7 @@ module StsSalesforceOrg
       end
 
       def copy_migrations
-        copy_migration "create_salesforce_org"
+        copy_migration "create_salesforce_orgs"
         copy_migration "add_disabled_to_salesforce_org"
         copy_migration "add_error_message_to_salesforce_org"
         copy_migration "expand_error_message_field_length"
