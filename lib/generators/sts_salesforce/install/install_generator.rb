@@ -25,6 +25,7 @@ module StsSalesforce
         copy_migration "add_disabled_to_salesforce_org"
         copy_migration "add_error_message_to_salesforce_org"
         copy_migration "expand_error_message_field_length"
+        copy_migration "modify_username_in_salesforce_org"
       end
 
       def install_assets
@@ -34,7 +35,6 @@ module StsSalesforce
 
       def install_resources
         template "salesforce_orgs.rb", "app/admin/salesforce_orgs.rb"
-        template "salesforce_data.rb", "app/salesforce/salesforce_orgs.rb"
       end
 
       protected
