@@ -1,9 +1,11 @@
 require 'rails/generators/migration'
+require 'rails/generators/active_record/migration'
 
 module StsSalesforceOrg
   module Generators
     class InstallGenerator < ::Rails::Generators::Base
       include Rails::Generators::Migration
+      extend ActiveRecord::Generators::Migration
 
       source_root File.expand_path('../templates', __FILE__ )
 
@@ -25,13 +27,22 @@ module StsSalesforceOrg
         copy_migration "expand_error_message_field_length"
       end
 
-    protected
+      def install_assets
+        template '/assets/sts_salesforce_org.js', 'app/assets/javascripts/sts_salesforce_org.js'
+        template '/assets/sts_salesforce_org.css', 'app/assets/stylesheets/sts_salesforce_org.css'
+      end
+
+      def install_resources
+        template "/resources/salesforce_orgs.rb", "app/admin/salesforce_orgs.rb"
+      end
+
+      protected
 
       def copy_migration(filename)
         if self.class.migration_exists?("db/migrate", "#{filename}")
           say_status("skipped", "Migration #{filename}.rb already exists")
         else
-          migration_template "migrations/#{filename}.rb", "db/migrate/#{filename}.rb"
+          migration_template "/migrations/#{filename}.rb", "db/migrate/#{filename}.rb"
         end
       end
 
