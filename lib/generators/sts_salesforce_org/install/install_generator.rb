@@ -1,7 +1,7 @@
 require 'rails/generators/migration'
 require 'rails/generators/active_record/migration'
 
-module StsSalesforceOrg
+module StsSalesforce
   module Generators
     class InstallGenerator < ::Rails::Generators::Base
       include Rails::Generators::Migration
@@ -28,8 +28,8 @@ module StsSalesforceOrg
       end
 
       def install_assets
-        template 'sts_salesforce_org.js', 'app/assets/javascripts/sts_salesforce_org.js'
-        template 'sts_salesforce_org.css', 'app/assets/stylesheets/sts_salesforce_org.css'
+        template 'sts_salesforce.js', 'app/assets/javascripts/sts_salesforce.js'
+        template 'sts_salesforce.css', 'app/assets/stylesheets/sts_salesforce.css'
       end
 
       def install_resources

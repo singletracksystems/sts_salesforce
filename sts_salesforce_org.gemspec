@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'sts_salesforce_org/version'
+require 'sts_salesforce/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "sts_salesforce_org"
-  spec.version       = StsSalesforceOrg::VERSION
+  spec.name          = "sts_salesforce"
+  spec.version       = StsSalesforce::VERSION
   spec.authors       = ["Singletrack Systems Ltd"]
   spec.email         = [""]
   spec.description   = ""

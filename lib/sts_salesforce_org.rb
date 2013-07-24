@@ -1,6 +1,6 @@
-require "sts_salesforce_org/version"
-require "sts_salesforce_org/engine"
+require "sts_salesforce/version"
+require "sts_salesforce/engine"
 
-module StsSalesforceOrg
+module StsSalesforce
   # Your code goes here...
 end

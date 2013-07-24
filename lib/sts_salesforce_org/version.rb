@@ -1,3 +1,3 @@
-module StsSalesforceOrg
+module StsSalesforce
   VERSION = "0.0.1"
 end

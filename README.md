@@ -1,4 +1,4 @@
-# StsSalesforceOrg
+# StsSalesforce
 
 TODO: Write a gem description
 
@@ -6,7 +6,7 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem 'sts_salesforce_org'
+    gem 'sts_salesforce'
 
 And then execute:
 
@@ -14,7 +14,11 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install sts_salesforce_org
+    $ gem install sts_salesforce
+
+then to run generator
+
+    $ rails g sts_salesforce:install
 
 ## Usage
 

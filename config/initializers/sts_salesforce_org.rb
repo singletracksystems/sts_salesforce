@@ -15,8 +15,8 @@ ActiveAdmin.setup do |config|
   # To load a javascript file:
   #   config.register_javascript 'my_javascript.js'
 
-  config.register_javascript 'sts_salesforce_org.js'
+  config.register_javascript 'sts_salesforce.js'
 
-  config.register_stylesheet 'sts_salesforce_org.css'
+  config.register_stylesheet 'sts_salesforce.css'
 
 end
