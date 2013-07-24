@@ -34,6 +34,7 @@ module StsSalesforce
 
       def install_resources
         template "salesforce_orgs.rb", "app/admin/salesforce_orgs.rb"
+        template "salesforce_data.rb", "app/salesforce/salesforce_orgs.rb"
       end
 
       protected
