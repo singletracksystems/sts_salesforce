@@ -1,3 +1,5 @@
+require 'active_admin'
+
 ActiveAdmin.setup do |config|
 
   # == Register Stylesheets & Javascripts
