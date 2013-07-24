@@ -25,6 +25,8 @@ module StsSalesforce
         copy_migration "add_disabled_to_salesforce_org"
         copy_migration "add_error_message_to_salesforce_org"
         copy_migration "expand_error_message_field_length"
+        copy_migration "rename_username_to_username_encrypted"
+        copy_migration "add_email_addresses_to_salesforce_orgs"
       end
 
       def install_assets
