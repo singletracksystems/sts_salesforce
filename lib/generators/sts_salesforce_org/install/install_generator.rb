@@ -28,12 +28,12 @@ module StsSalesforceOrg
       end
 
       def install_assets
-        template '/assets/sts_salesforce_org.js', 'app/assets/javascripts/sts_salesforce_org.js'
-        template '/assets/sts_salesforce_org.css', 'app/assets/stylesheets/sts_salesforce_org.css'
+        template 'sts_salesforce_org.js', 'app/assets/javascripts/sts_salesforce_org.js'
+        template 'sts_salesforce_org.css', 'app/assets/stylesheets/sts_salesforce_org.css'
       end
 
       def install_resources
-        template "/resources/salesforce_orgs.rb", "app/admin/salesforce_orgs.rb"
+        template "salesforce_orgs.rb", "app/admin/salesforce_orgs.rb"
       end
 
       protected
