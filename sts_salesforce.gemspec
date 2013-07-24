@@ -22,6 +22,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
 
   spec.add_dependency "rforce"
-  spec.add_dependency "activeadmin"
+  spec.add_dependency "activeadmin", "= 0.5.1"
 
 end
