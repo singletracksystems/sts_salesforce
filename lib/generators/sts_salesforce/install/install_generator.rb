@@ -11,15 +11,6 @@ module StsSalesforce
 
       desc "add migrations"
 
-      def self.next_migration_number(path)
-        unless @prev_migration_nr
-          @prev_migration_nr = Time.now.utc.strftime("%Y%m%d%H%M%S").to_i
-        else
-          @prev_migration_nr += 1
-        end
-        @prev_migration_nr.to_s
-      end
-
       def copy_migrations
         copy_migration "create_salesforce_orgs"
         copy_migration "add_disabled_to_salesforce_org"
@@ -36,7 +27,6 @@ module StsSalesforce
 
       def install_resources
         template "salesforce_orgs.rb", "app/admin/salesforce_orgs.rb"
-        template "salesforce_data.rb", "app/salesforce/salesforce_orgs.rb"
       end
 
       protected
@@ -45,7 +35,7 @@ module StsSalesforce
         if self.class.migration_exists?("db/migrate", "#{filename}")
           say_status("skipped", "Migration #{filename}.rb already exists")
         else
-          migration_template "/migrations/#{filename}.rb", "db/migrate/#{filename}.rb"
+          migration_template "#{filename}.rb", "db/migrate/#{filename}.rb"
         end
       end
 
