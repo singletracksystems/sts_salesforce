@@ -7,6 +7,8 @@
         <li>
           <%= render "test_connection", :salesforce_org => nil %>
         </li>
+        <%= f.input :email_addresses %>
+        <%= f.input :organization_id %>
         <%= f.input :disabled %>
         <%= f.input :packaged %>
         <%= f.input :sandbox %>

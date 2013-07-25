@@ -1,4 +1,7 @@
 ActiveAdmin.register SalesforceOrg do
+
+  menu priority: 4
+
   filter :name
 
   form :partial => "form"
@@ -14,7 +17,7 @@ ActiveAdmin.register SalesforceOrg do
   end
 
   show title: :name do |s|
-    attributes_table :name, :username, :packaged, :sandbox, :disabled, :error_message, :created_at, :updated_at
+    attributes_table :name, :username, :email_addresses, :organization_id, :packaged, :sandbox, :disabled, :error_message, :created_at, :updated_at
 
     render "test_connection" , :salesforce_org => s
   end
