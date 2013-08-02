@@ -1,5 +1,4 @@
 require 'spec_helper'
-require File.expand_path('../../../app/models/salesforce_org', __FILE__)
 
 describe SalesforceOrg do
 

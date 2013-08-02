@@ -15,7 +15,7 @@ require 'rspec/rails'
 require 'active_record'
 require 'savon'
 
-require File.expand_path('../../app/salesforce/salesforce_data', __FILE__)
+require File.expand_path('../../app/salesforce/salesforce', __FILE__)
 require File.expand_path('../../app/models/salesforce_org', __FILE__)
 
 RSpec.configure do |config|
