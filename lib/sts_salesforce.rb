@@ -1,4 +1,4 @@
-
+require 'databasedotcom'
 require 'logger'
 require 'active_support/inflector'
 require 'csv'
