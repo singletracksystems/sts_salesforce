@@ -1,7 +1,4 @@
-require "sts_salesforce/version"
-require "sts_salesforce/engine"
 
-require 'databasedotcom'
 require 'logger'
 require 'active_support/inflector'
 require 'csv'
