@@ -26,7 +26,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rails", ">= 3.2.11"
   spec.add_dependency "attr_encrypted"
   spec.add_dependency "savon", "~> 1.2"
-  spec.add_dependency "inherited_resources", "= 1.3.1"
+  spec.add_dependency "inherited_resources"
   spec.add_dependency "activeadmin", ">= 0.5.1"
 
 end
