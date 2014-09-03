@@ -2,7 +2,7 @@
 
     def test_conn
 
-      begin
+      # begin
         salesforce_org = SalesforceOrg.new()
         salesforce_org.username = params['salesforce_org']['username']
         salesforce_org.password = params['salesforce_org']['password']
@@ -10,9 +10,9 @@
         salesforce_org.sandbox = params['salesforce_org']['sandbox']
         response = SalesforceData.new(salesforce_org)
         render :json => '{"message" : "Connection Successful"}'
-      rescue Exception => e
-        render :json => '{"message" : "Connection Failed", "error" : e }'
-      end
+      # rescue Exception => e
+      #   render :json => '{"message" : "Connection Failed", "error" : e }'
+      # end
 
     end
 
