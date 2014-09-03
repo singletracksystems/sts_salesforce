@@ -11,7 +11,7 @@
         response = SalesforceData.new(salesforce_org)
         render :json => '{"message" : "Connection Successful"}'
       rescue Exception => e
-        render :json => '{"message" : "Connection Failed"}'
+        render :json => '{"message" : "Connection Failed", "error" : e }'
       end
 
     end
