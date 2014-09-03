@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec-rails", "= 2.12.2"
   spec.add_development_dependency "sqlite3"
 
-  spec.add_dependency "rails", "= 3.2.11"
+  spec.add_dependency "rails", ">= 3.2.11"
   spec.add_dependency "attr_encrypted"
   spec.add_dependency "savon", "~> 1.2"
   spec.add_dependency "inherited_resources", "= 1.3.1"
