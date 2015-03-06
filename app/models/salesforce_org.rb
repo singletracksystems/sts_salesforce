@@ -1,4 +1,5 @@
 class SalesforceOrg < ActiveRecord::Base
+  default_scope order('name Asc')
   attr_accessible :name, :packaged, :password, :sandbox, :token, :username, :disabled, :error_message, :organization_id, :email_addresses
 
   attr_encrypted :username, :attribute => 'username_encrypted', :key => (Rails.application ? Rails.application.config.db_encryption_key : 'r0-wfojomLCbsLqYxDBsHjnEDEMWTo')
