@@ -19,6 +19,7 @@ module StsSalesforce
         copy_migration "rename_username_to_username_encrypted"
         copy_migration "add_organization_id_to_salesforce_org"
         copy_migration "add_email_addresses_to_salesforce_orgs"
+        copy_migration "add_oauth_fields_to_salesforce_org"
       end
 
       def install_assets
