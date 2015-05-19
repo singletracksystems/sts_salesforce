@@ -6,14 +6,14 @@
         <%= f.input :token, :as => :password, :input_html => { :value => f.object.token} %>
         <%= f.input :client_id, label: 'Client ID' %>
         <%= f.input :client_secret, label: 'Client Secret', :as => :password, :input_html => { :value => f.object.client_secret} %>
+        <%= f.input :disabled %>
+        <%= f.input :packaged %>
+        <%= f.input :sandbox %>
         <li>
           <%= render "test_connection", :salesforce_org => nil %>
         </li>
         <%= f.input :email_addresses %>
         <%= f.input :organization_id %>
-        <%= f.input :disabled %>
-        <%= f.input :packaged %>
-        <%= f.input :sandbox %>
     <% end %>
     <%= f.actions do %>
         <%= f.action :submit %>
