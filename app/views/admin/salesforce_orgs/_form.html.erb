@@ -4,8 +4,8 @@
         <%= f.input :username %>
         <%= f.input :password, :as => :password, :input_html => { :value => f.object.password} %>
         <%= f.input :token, :as => :password, :input_html => { :value => f.object.token} %>
-        <%= f.input :client_id %>
-        <%= f.input :client_secret, :as => :password, :input_html => { :value => f.object.client_secret} %>
+        <%= f.input :client_id, label: 'Client ID' %>
+        <%= f.input :client_secret, label: 'Client Secret', :as => :password, :input_html => { :value => f.object.client_secret} %>
         <li>
           <%= render "test_connection", :salesforce_org => nil %>
         </li>
